@@ -1,0 +1,311 @@
+Script started on Tue Mar 12 00:54:08 2019
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+
+==================================
+| T1. Constants                  |
+==================================
+| T1.1. Checking that the constants are defined.
+----------------------------------------------------------------
+              Min Year: 2019
+              Min Year: 2019
+              Max Year: 2028
+              No Error: 0
+            Year Error: 1
+           Month Error: 2
+             Day Error: 3
+     Invalid Operation: 4
+           Input Error: 5
+----------------------------------------------------------------
+
+==================================
+| T2. Default Constructor        |
+==================================
+| T2.1. Checking displaying an empty object.
+----------------------------------------------------------------
+    Date::display(...): 0000/00/00
+       operator<<(...): 0000/00/00
+----------------------------------------------------------------
+| T2.2. Checking the state of an empty object.
+----------------------------------------------------------------
+     Date::isGood(...): 0
+     Date::status(...): 0
+----------------------------------------------------------------
+| T2.3. Checking relational operators on an empty object.
+----------------------------------------------------------------
+ Date::operator==(...): 1
+ Date::operator!=(...): 0
+  Date::operator<(...): 0
+  Date::operator>(...): 0
+ Date::operator<=(...): 1
+ Date::operator>=(...): 1
+----------------------------------------------------------------
+| T2.4. Checking += on an empty object.
+----------------------------------------------------------------
+    returned reference: 1
+                 aDate: 0000/00/00
+     aDate.isGood(...): 0
+     aDate.status(...): 4
+aDate.clearError() -->
+     aDate.isGood(...): 0
+     aDate.status(...): 0
+----------------------------------------------------------------
+| T2.5 Checking + on an empty object.
+----------------------------------------------------------------
+                 aDate: 0000/00/00
+     aDate.isGood(...): 0
+     aDate.status(...): 0
+                   tmp: 0000/00/00
+       tmp.isGood(...): 0
+       tmp.status(...): 4
+----------------------------------------------------------------
+| T2.6. Checking postfix++ on an empty object.
+----------------------------------------------------------------
+tmp = aDate++ -->
+                   tmp: 0000/00/00
+       tmp.isGood(...): 0
+       tmp.status(...): 0
+                 aDate: 0000/00/00
+     aDate.isGood(...): 0
+     aDate.status(...): 4
+----------------------------------------------------------------
+| T2.7. Checking prefix++ on an empty object.
+----------------------------------------------------------------
+tmp = ++aDate -->
+                   tmp: 0000/00/00
+       tmp.isGood(...): 0
+       tmp.status(...): 4
+                 aDate: 0000/00/00
+     aDate.isGood(...): 0
+     aDate.status(...): 4
+aDate.clearError() -->
+                   tmp: 0000/00/00
+tmp - Date::isGood(...): 0
+tmp - Date::status(...): 0
+                 aDate: 0000/00/00
+     aDate.isGood(...): 0
+     aDate.status(...): 0
+----------------------------------------------------------------
+
+==================================
+| T3. Custom Constructor         |
+==================================
+| T3.1. Checking for invalid dates.
+----------------------------------------------------------------
+            1020.10.15: 0000/00/00
+ status - > 1020.10.15: 1
+            3020.10.15: 0000/00/00
+ status - > 3020.10.15: 1
+            2020.13.15: 0000/00/00
+ status - > 2020.13.15: 2
+            2020.00.15: 0000/00/00
+ status - > 2020.00.15: 2
+            2020.10.32: 0000/00/00
+ status - > 2020.10.32: 3
+            2020.10.00: 0000/00/00
+ status - > 2020.10.00: 3
+            2021.02.29: 0000/00/00
+ status - > 2021.02.29: 3
+            2021.04.31: 0000/00/00
+ status - > 2021.04.31: 3
+----------------------------------------------------------------
+| T3.2. Checking for valid dates.
+----------------------------------------------------------------
+            2020.10.15: 2020/10/15
+ status - > 2020.10.15: 0
+            2020.10.31: 2020/10/31
+ status - > 2020.10.31: 0
+            2020.10.01: 2020/10/01
+ status - > 2020.10.01: 0
+            2020.02.29: 2020/02/29
+ status - > 2020.02.29: 0
+----------------------------------------------------------------
+
+==================================
+| T4. Operations                 |
+==================================
+| T4.1. Checking relational operators on a valid object.
+----------------------------------------------------------------
+                 aDate: 2022/10/15
+           anotherDate: 2022/10/25
+  aDate == anotherDate: 0
+  anotherDate == aDate: 0
+  aDate != anotherDate: 1
+  anotherDate != aDate: 1
+   aDate > anotherDate: 0
+   anotherDate > aDate: 1
+   aDate < anotherDate: 1
+   anotherDate < aDate: 0
+  aDate <= anotherDate: 1
+  anotherDate <= aDate: 0
+  aDate >= anotherDate: 0
+  anotherDate >= aDate: 1
+   aDate == 2022.10.15: 1
+   aDate != 2022.10.15: 0
+    aDate > 2022.10.15: 0
+    aDate < 2022.10.15: 0
+   aDate <= 2022.10.15: 1
+   aDate >= 2022.10.15: 1
+----------------------------------------------------------------
+| T4.2. Checking += on a valid object.
+----------------------------------------------------------------
+                 aDate: 2022/10/15
+            aDate += 3: 2022/10/18
+     aDate.isGood(...): 1
+     aDate.status(...): 0
+----------------------------------------------------------------
+| T4.3. Checking + on a valid object.
+----------------------------------------------------------------
+                 aDate: 2022/10/18
+tmp = aDate + 3: -->
+                   tmp: 2022/10/21
+       tmp.isGood(...): 1
+       tmp.status(...): 0
+                 aDate: 2022/10/18
+     aDate.isGood(...): 1
+     aDate.status(...): 0
+----------------------------------------------------------------
+| T4.4. Checking postfix++ on a valid object.
+----------------------------------------------------------------
+tmp = aDate++ -->
+                   tmp: 2022/10/18
+       tmp.isGood(...): 1
+       tmp.status(...): 0
+                 aDate: 2022/10/19
+     aDate.isGood(...): 1
+     aDate.status(...): 0
+----------------------------------------------------------------
+| T4.5. Checking prefix++ on a valid object.
+----------------------------------------------------------------
+tmp = ++aDate -->
+                   tmp: 2022/10/20
+       tmp.isGood(...): 1
+       tmp.status(...): 0
+                 aDate: 2022/10/20
+     aDate.isGood(...): 1
+     aDate.status(...): 0
+----------------------------------------------------------------
+| T4.6. Checking overflow for + on a valid object.
+----------------------------------------------------------------
+                 aDate: 2022/10/15
+     aDate.isGood(...): 1
+     aDate.status(...): 0
+                   tmp: 2022/10/15
+       tmp.isGood(...): 0
+       tmp.status(...): 4
+tmp += 5: 
+                   tmp: 2022/10/15
+       tmp.isGood(...): 0
+       tmp.status(...): 4
+tmp.clearError(): 
+                   tmp: 2022/10/15
+       tmp.isGood(...): 1
+       tmp.status(...): 0
+    tmp == anotherDate: 0
+tmp += 7: 
+                   tmp: 2022/10/22
+       tmp.isGood(...): 1
+       tmp.status(...): 0
+    tmp == anotherDate: 1
+tmp += -25: 
+                   tmp: 2022/10/22
+       tmp.isGood(...): 0
+       tmp.status(...): 4
+    tmp == anotherDate: 1
+----------------------------------------------------------------
+
+==================================
+| T5. Extraction Operator        |
+==================================
+----------------------------------------------------------------
+Attempt 1
+                  text: 1020.10.15
+                 aDate: 0000/00/00
+        aDate.status(): 1
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 2
+                  text: 3020-10-15
+                 aDate: 0000/00/00
+        aDate.status(): 1
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 3
+                  text: 2020.10.15
+                 aDate: 2020/10/15
+        aDate.status(): 0
+        aDate.isGood(): 1
+        istream.fail(): 0
+Attempt 4
+                  text: 2020/13/15
+                 aDate: 0000/00/00
+        aDate.status(): 2
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 5
+                  text: 2020.00.15
+                 aDate: 0000/00/00
+        aDate.status(): 2
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 6
+                  text: 2020/10/31
+                 aDate: 2020/10/31
+        aDate.status(): 0
+        aDate.isGood(): 1
+        istream.fail(): 0
+Attempt 7
+                  text: 2020.10.32
+                 aDate: 0000/00/00
+        aDate.status(): 3
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 8
+                  text: 2020/10/0
+                 aDate: 0000/00/00
+        aDate.status(): 3
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 9
+                  text: 2020-10-01
+                 aDate: 2020/10/01
+        aDate.status(): 0
+        aDate.isGood(): 1
+        istream.fail(): 0
+Attempt 10
+                  text: 2021-02-29
+                 aDate: 0000/00/00
+        aDate.status(): 3
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 11
+                  text: 2021.04.31
+                 aDate: 0000/00/00
+        aDate.status(): 3
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 12
+                  text: 2020/02/29
+                 aDate: 2020/02/29
+        aDate.status(): 0
+        aDate.isGood(): 1
+        istream.fail(): 0
+Attempt 13
+                  text: 2020--10-01
+                 aDate: 0000/00/00
+        aDate.status(): 2
+        aDate.isGood(): 0
+        istream.fail(): 0
+Attempt 14
+                  text: 2020//10/01
+                 aDate: 0000/00/00
+        aDate.status(): 5
+        aDate.isGood(): 0
+        istream.fail(): 1
+----------------------------------------------------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+
+Script done on Tue Mar 12 00:54:08 2019
