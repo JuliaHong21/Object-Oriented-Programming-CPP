@@ -1,0 +1,54 @@
+Script started on Sat Feb  9 13:39:36 2019
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+----------------------------------------
+Testing the validation logic
+(only travelers 6, 9, 12 and 16 should be valid)
+----------------------------------------
+Traveler 1: not valid
+Traveler 2: not valid
+Traveler 3: not valid
+Traveler 4: not valid
+Traveler 5: not valid
+Traveler 6: valid
+Traveler 7: not valid
+Traveler 8: not valid
+Traveler 9: valid
+Traveler 10: not valid
+Traveler 11: not valid
+Traveler 12: valid
+Traveler 13: not valid
+Traveler 14: not valid
+Traveler 15: not valid
+Traveler 16: valid
+Traveler 17: not valid
+----------------------------------------
+
+----------------------------------------
+Testing Traveler::display(...)
+----------------------------------------
+Miller, Vanessa goes to Toronto on 2019/06/20
+Miller, John goes to Toronto on 2019/06/06
+Turner, Alice goes to Toronto on 2019/10/20
+Moore, Bob goes to Paris on 2019/06/20
+Hill, Jennifer goes to Toronto on 2020/06/20
+Flores, Mike goes to Toronto on 2019/06/20
+Stewart, Sarah goes to Toronto on 2019/06/20
+Simmons, Mark goes to Toronto on 2019/07/01
+----------------------------------------
+
+----------------------------------------
+Testing Traveler::canTravelWith(...)
+----------------------------------------
+David can travel with: 
+  - Vanessa
+  - Mike
+  - Sarah
+----------------------------------------
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+
+Script done on Sat Feb  9 13:39:36 2019

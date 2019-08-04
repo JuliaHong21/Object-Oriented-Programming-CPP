@@ -1,0 +1,45 @@
+Script started on Sun Jan 27 05:04:28 2019
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+==========
+Input data
+==========
+Enter the number of phones: 2
+Phone #1: 
+Enter the model of the Phone: Pixel2
+Enter the price for phone Pixel2: 759
+Phone #2: 
+Enter the model of the Phone: iPhoneX
+Enter the price for phone iPhoneX: 1284.99
+==========
+
+------------------------------
+The 1st phone entered is
+------------------------------
+Phone Pixel2 costs $759!
+------------------------------
+
+==========
+Input data
+==========
+Phone #3: 
+Enter the model of the Phone: GalaxyS9
+Enter the price for phone GalaxyS9: 719.99
+==========
+
+------------------------------
+Phones available at the mall:
+------------------------------
+1. Phone Pixel2 costs $759!
+2. Phone iPhoneX costs $1284.99!
+3. Phone GalaxyS9 costs $719.99!
+------------------------------
+The cheapest phone costs $719.99.
+------------------------------
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+
+Script done on Sun Jan 27 05:04:57 2019

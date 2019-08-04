@@ -1,0 +1,71 @@
+Script started on Sun Feb  3 03:11:11 2019
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Book Management App
+===================
+
+Checking the constants:
+-----------------------
+max_title_size = 32
+max_name_size = 16
+min_isbn_value = 1000000000000
+max_isbn_value = 9999999999999
+
+Displaying the library as a list:
+---------------------------------
+The book object is empty!
+The book object is empty!
+The book object is empty!
+The book object is empty!
+The book object is empty!
+
+Author: Herbert, Frank
+Title: Dune
+ISBN-13: 9780441172719
+Publication Year: 1990
+Price: 9.73
+
+Author: Orwell, George
+Title: 1984
+ISBN-13: 9780451524935
+Publication Year: 1950
+Price: 6
+
+Author: Austen, Jane
+Title: Pride and Prejudice
+ISBN-13: 9780199535569
+Publication Year: 2008
+Price: 6.1
+
+Author: Tolkien, J.R.R.
+Title: The Lord of the Rings
+ISBN-13: 9780544003415
+Publication Year: 2012
+Price: 12.8
+
+Author: Lee, Harper
+Title: To Kill a Mockingbird
+ISBN-13: 9780446310789
+Publication Year: 1988
+Price: 10.99
+
+
+Displaying the library as a table:
+----------------------------------------------------------------------------------------------
+|The book object is empty!                                                                   |
+|The book object is empty!                                                                   |
+|The book object is empty!                                                                   |
+|The book object is empty!                                                                   |
+|The book object is empty!                                                                   |
+|         Herbert|           Frank|Dune                            |9780441172719|1990|  9.73|
+|          Orwell|          George|1984                            |9780451524935|1950|  6.00|
+|          Austen|            Jane|Pride and Prejudice             |9780199535569|2008|  6.10|
+|         Tolkien|          J.R.R.|The Lord of the Rings           |9780544003415|2012| 12.80|
+|             Lee|          Harper|To Kill a Mockingbird           |9780446310789|1988| 10.99|
+----------------------------------------------------------------------------------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+
+Script done on Sun Feb  3 03:11:11 2019

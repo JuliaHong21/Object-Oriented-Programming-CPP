@@ -1,0 +1,23 @@
+Script started on Sat 09 Feb 2019 02:07:13 PM EST
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+------------------------------
+Fraction Class Test:
+------------------------------
+Fraction a; // a = no fraction stored
+Fraction b(1, 3); // b = 1/3
+Fraction c(-5, 15); // c = no fraction stored
+Fraction d(2, 4); // d = 1/2
+Fraction e(8, 4); // e = 2
+a + b equals no fraction stored
+b + d equals 5/6
+(b += d) equals 5/6 
+b equals 5/6 
+(a == c) equals false 
+(a != c) equals false
+
+[38;5;9m------------------------
+End Testing the Program![0m
+
+Script done on Sat 09 Feb 2019 02:07:13 PM EST
