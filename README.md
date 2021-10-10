@@ -1,5 +1,5 @@
 # OOP244
-Introduction to Object-Oriented Programming
+Introduction to Object-Oriented Programming using c++
 
 Abstraction, Objects and Classes,
 Encapsulation, Inheritance and Polymorphism,
